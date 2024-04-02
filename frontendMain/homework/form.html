@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма заполнения данных о пользователе</title>
+</head>
+<body>
+    <h1>Данные о пользователе:</h1>
+    <hr>
+    <form action="" method="post">
+        <label for="surname"><I> Фамилия:</I></label>
+        <input type="text" id="surname" name="surname" required>
+
+        <label for="name"><i> Имя:</i></label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="patronymic"><i> Отчество:</i></label>
+        <input type="text" id="patronymic" name="patronymic">
+<hr>
+<br>
+        <label for="gender"><b>Пол:</b></label>
+        <select id="gender" name="gender">
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+            <option value="other">Другой</option>
+        </select>
+<hr>
+<br>
+        <label for="username"><b> Логин:</b></label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password"><b> Пароль:</b></label>
+        <input type="password" id="password" name="password" required>
+<hr>
+<br>
+        <label for="birthdate"><i>Дата рождения:</i></label>
+        <input type="date" id="birthdate" name="birthdate" required>
+<hr>
+<br>
+        <label for="info">Общая информация:</label>
+       <br>
+        <textarea id="info" name="info" rows="4"></textarea>
+<br>
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>
