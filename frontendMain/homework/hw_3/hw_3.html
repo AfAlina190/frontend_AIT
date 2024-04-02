@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма заполнения данных о пользователе</title>
+    <link rel="stylesheet" href="./hw_3.css" />
+  </head>
+  <body>
+    <h1>ДАННЫЕ ПОЛЬЗОВАТЕЛЯ:</h1>
+    <hr />
+    <form action="" method="post">
+      <label for="surname"> Фамилия:</label>
+      <input
+        type="text"
+        id="surname"
+        name="surname"
+        required
+        placeholder="Введите вашу фамилию"
+      />
+
+      <label for="name"> Имя:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        placeholder="Введите ваше имя"
+      />
+
+      <label for="patronymic">Отчество:</label>
+      <input
+        type="text"
+        id="patronymic"
+        name="patronymic"
+        placeholder="Введите ваше отчество"
+      />
+      <hr />
+      <label for="gender">Пол:</label>
+      <select id="gender" name="gender">
+        <option value="male">Мужской</option>
+        <option value="female">Женский</option>
+      </select>
+
+      <hr />
+      <br />
+      <div>
+        <label for="birthdate">Дата рождения:</label>
+        <input type="date" id="birthdate" name="birthdate" required />
+      </div>
+
+      <hr />
+      <br />
+      <div>
+        <h2>Я уже зарегистрирован(а)</h2>
+        <br />
+        <label>
+          да
+          <input type="radio" name="yes_no" value="yes" />
+        </label>
+        <label>
+          нет
+          <input type="radio" name="yes_no" value="no" checked />
+        </label>
+      </div>
+
+      <hr />
+      <br />
+      <label for="username"> Логин:</label>
+      <input type="text" id="username" name="username" required placeholder="Ваша электронная почта "/>
+
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" name="password" required maxlength="8" />
+      <button class="btn-new sign_btn">Зарегистрироваться</button>
+      <br />
+      <br />
+      <label for="info">Общая информация:</label>
+      <br />
+      <textarea id="info" name="info" rows="4" maxlength="500"></textarea>
+      <br />
+      <button class="btn-new sign_btn">ОТПРАВИТЬ</button>
+    </form>
+  </body>
+</html>
