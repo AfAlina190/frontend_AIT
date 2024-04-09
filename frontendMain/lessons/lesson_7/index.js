@@ -5,7 +5,7 @@
 let s = 'hello';
 s = 1;
 
-const mzconst = 111;
+const s1 = 111;
 
 console.log(s);
 

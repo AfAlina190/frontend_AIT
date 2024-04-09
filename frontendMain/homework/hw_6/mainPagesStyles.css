@@ -1,0 +1,31 @@
+.products-card-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.product-card{
+width: 300px;
+background-color: rgb(162, 162, 162);
+height: 400px;
+margin-bottom: 20px;
+
+}
+
+.product-img{
+    margin: 10px;
+    pad: 12px;
+    width: 280px;
+    height: 200px;
+}
+
+.subscribe {
+  font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    color: rgb(28, 29, 30);
+    text-align: center;
+}
+
