@@ -1,0 +1,49 @@
+body{
+    padding: 16px;
+
+}
+
+.list{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.list-item{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-width: 4px;
+    border-style: dashed;
+}
+
+.list-item.new::before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background-color: rgb(77, 31, 108);
+
+}
+
+.list-item:nth-child(even){
+    border-color: blue;
+}
+
+.list-item:nth-child(odd){
+    border-color: violet;
+}
+
+.list-item:not(:last-child){
+    margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+
