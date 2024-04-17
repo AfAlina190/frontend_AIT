@@ -1,0 +1,7 @@
+.manufacturer {
+    display: block; /* Установка display:block, чтобы можно было скрывать элемент */
+}
+
+#hide-manufacturer.hidden + #spaceship-info .manufacturer {
+    visibility: hidden; /* Скрывает элемент .manufacturer при наличии класса .hidden на кнопке */
+}
