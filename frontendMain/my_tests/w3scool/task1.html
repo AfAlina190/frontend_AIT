@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./task_1_script.js" defer></script>
+    <title>Document</title>
+     <style>
+        .changed {
+            color: red; /* Меняет цвет текста на красный */
+            font-weight: bold; /* Делает текст жирным */
+        }
+    </style>
+</head>
+<body>
+    <!-- JavaScript может изменить HTML-контент ============================ -->
+    <div>
+      <h2>What Can JavaScript Do?</h2>
+
+      <p id="demo">JavaScript can change HTML content.</p>
+
+      <button
+        type="button"
+        onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'"
+      >
+        Click Me!
+      </button>
+    </div>
+
+    <!-- JavaScript может изменять стили HTML (CSS) ======================== -->
+    <div>
+      <p id="demo1">JavaScript can change the style of an HTML element.</p>
+
+      <button
+        type="button"
+        onclick="document.getElementById('demo1').style.fontSize='40px'"
+      >
+        Click Me!
+      </button>
+    </div>
+    <br />
+
+    <!-- JavaScript может скрывать элементы HTML =======================   -->
+
+    <div>
+      <p id="demo2">JavaScript can hide HTML elements.</p>
+
+      <button
+        type="button"
+        onclick="document.getElementById('demo2').style.display='none'"
+      >
+        Click Me!
+      </button>
+    </div>
+
+    <!-- JavaScript может отображать элементы HTML ======================   -->
+
+    <div>
+      <p>JavaScript can show hidden HTML elements.</p>
+
+      <p id="demo3" style="display: none">Hello JavaScript!</p>
+
+      <button
+        type="button"
+        onclick="document.getElementById('demo3').style.display='block'"
+      >
+        Click Me!
+      </button>
+    </div>
+
+    <div>
+        <h2>Demo JavaScript in Head</h2>
+
+<p id="demo4" class="changed">A Paragraph</p>
+<button type="button" onclick="myFunction()" >Try it</button>
+    </div>
+
+    <!-- Использование внутреннегоHTML ===================================== -->
+    <div>
+        <h3>My First Web Page</h3>
+<p>My First Paragraph</p>
+
+<p id="demo5"></p>
+
+    </div>
+
+    <!-- Использование document.write()==================================== -->
+    <div>
+        <h3>My First Web Page</h3>
+        <p>My first paragraph.</p>
+        
+        <p>Never call document.write after the document has finished loading.
+        It will overwrite the whole document.</p>
+    </div>
+
+    <div>
+        <h2>My First Web Page</h2>
+<p>My first paragraph.</p>
+
+<button type="button" onclick="document.write(5 + 6)">Try it</button>
+    </div>
+
+    <!-- JavaScript Печать ================================================= -->
+
+    <div>
+        <h2>The window.print() Method</h2>
+
+<p>Click the button to print the current page.</p>
+
+<button onclick="window.print()">Print this page</button>
+    </div>
+</body>
+</html>
