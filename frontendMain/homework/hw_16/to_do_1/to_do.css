@@ -1,0 +1,94 @@
+body {
+    height: 100%;
+    background-color: rgb(158, 218, 45);
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.wrap {
+    width: 100px;
+    margin: auto;
+}
+
+.input {
+    width: calc(300% - 100px); /* Увеличиваем ширину ввода на 100% минус ширина кнопки */
+    max-width: 300px; /* Устанавливаем максимальную ширину ввода */
+    padding: 10px; /* Добавляем отступы для удобства ввода */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Добавляем скругленные углы */
+    margin-right: 10px;
+    
+}
+
+#btn {
+    width: 100px;  
+    margin-left: 35%;
+    align-items: center;
+} 
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#result {
+    margin-bottom: 50px;
+}
+
+.btn {
+    background-color: rgb(222, 82, 58);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    margin-top: 5px;
+    margin-left: 15px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10; 
+}
+
+.li {
+    padding: 4px 8px;
+    background-color: beige;
+    border: 1px solid brown;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    text-transform: capitalize;
+}
+
+.li-active {
+    color: #555;
+    text-decoration: line-through;
+    background: black;
+}
+
+.li-active .btn {
+    color: #555;
+    text-decoration: line-through;
+    background: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
